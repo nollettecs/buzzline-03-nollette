@@ -834,3 +834,323 @@
 2025-01-30 19:52:52.676 | INFO     | __main__:process_message:79 - Processed JSON message: {'alert_id': 'WX00014', 'severity': 'Severe', 'event': 'Snowstorm', 'location': 'Mountainous Area', 'timestamp': '2025-01-31T01:52:52.664343Z'}
 2025-01-30 19:52:52.676 | INFO     | __main__:process_message:85 - Weather alert received: unknown
 2025-01-30 19:52:52.676 | INFO     | __main__:process_message:91 - Updated alert counts: {'unknown': 14}
+2025-01-30 21:21:51.446 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-30 21:21:51.449 | INFO     | __main__:<module>:52 - Project root: /Users/nollettecs/Desktop/44671_module3/buzzline-03-nollette
+2025-01-30 21:21:51.449 | INFO     | __main__:<module>:55 - Data folder: /Users/nollettecs/Desktop/44671_module3/buzzline-03-nollette/data
+2025-01-30 21:21:51.449 | INFO     | __main__:<module>:58 - Data file: /Users/nollettecs/Desktop/44671_module3/buzzline-03-nollette/data/outside_temps.csv
+2025-01-30 21:21:51.450 | INFO     | __main__:main:111 - START producer.
+2025-01-30 21:21:51.450 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-30 21:21:51.454 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-30 21:21:51.454 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-30 21:21:51.840 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'mac.lan', 'port': 9092, 'rack': None}], 'cluster_id': 'S1EN9onKTNi1lyvf3wFNGA', 'controller_id': 0}
+2025-01-30 21:21:51.841 | INFO     | __main__:get_kafka_topic:38 - Kafka topic: unknown_topic
+2025-01-30 21:21:51.841 | INFO     | __main__:get_message_interval:44 - Message interval: 1 seconds
+2025-01-30 21:21:51.841 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-30 21:21:51.841 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-30 21:21:51.956 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-30 21:21:51.957 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-30 21:21:52.291 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'unknown_topic'.
+2025-01-30 21:21:52.380 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'unknown_topic' created successfully.
+2025-01-30 21:21:52.381 | INFO     | __main__:main:130 - Kafka topic 'unknown_topic' is ready.
+2025-01-30 21:21:52.381 | INFO     | __main__:main:135 - Starting message production to topic 'unknown_topic'...
+2025-01-30 21:21:52.381 | INFO     | __main__:generate_messages:76 - Opening data file in read mode: /Users/nollettecs/Desktop/44671_module3/buzzline-03-nollette/data/outside_temps.csv
+2025-01-30 21:21:52.381 | INFO     | __main__:generate_messages:78 - Reading data from file: /Users/nollettecs/Desktop/44671_module3/buzzline-03-nollette/data/outside_temps.csv
+2025-01-30 21:21:52.440 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:52.381516', 'temperature': 70.4}
+2025-01-30 21:21:53.446 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:53.445725', 'temperature': 70.8}
+2025-01-30 21:21:54.453 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:54.452723', 'temperature': 71.2}
+2025-01-30 21:21:55.454 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:55.454437', 'temperature': 71.6}
+2025-01-30 21:21:56.461 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:56.460111', 'temperature': 72.0}
+2025-01-30 21:21:57.467 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:57.467027', 'temperature': 72.4}
+2025-01-30 21:21:58.472 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:58.472097', 'temperature': 72.8}
+2025-01-30 21:21:59.476 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:21:59.475566', 'temperature': 73.2}
+2025-01-30 21:22:00.483 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:00.482582', 'temperature': 73.6}
+2025-01-30 21:22:01.487 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:01.487103', 'temperature': 74.0}
+2025-01-30 21:22:02.492 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:02.490955', 'temperature': 74.4}
+2025-01-30 21:22:03.497 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:03.496069', 'temperature': 74.8}
+2025-01-30 21:22:04.504 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:04.503330', 'temperature': 75.2}
+2025-01-30 21:22:05.511 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:05.510513', 'temperature': 75.6}
+2025-01-30 21:22:06.517 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:06.516230', 'temperature': 76.0}
+2025-01-30 21:22:07.521 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:07.521185', 'temperature': 76.4}
+2025-01-30 21:22:08.524 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:08.523778', 'temperature': 76.8}
+2025-01-30 21:22:09.529 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:09.528888', 'temperature': 77.2}
+2025-01-30 21:22:10.535 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:10.535017', 'temperature': 77.6}
+2025-01-30 21:22:11.542 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:11.541052', 'temperature': 78.0}
+2025-01-30 21:22:12.549 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:12.548501', 'temperature': 78.4}
+2025-01-30 21:22:13.552 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:13.551126', 'temperature': 78.8}
+2025-01-30 21:22:14.557 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:14.556728', 'temperature': 79.2}
+2025-01-30 21:22:15.563 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:15.562500', 'temperature': 79.6}
+2025-01-30 21:22:16.568 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:16.568066', 'temperature': 80.0}
+2025-01-30 21:22:17.573 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:17.572958', 'temperature': 80.4}
+2025-01-30 21:22:18.576 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:18.575681', 'temperature': 80.8}
+2025-01-30 21:22:19.580 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:19.579495', 'temperature': 81.2}
+2025-01-30 21:22:20.585 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:20.584650', 'temperature': 81.6}
+2025-01-30 21:22:21.593 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:21.592003', 'temperature': 82.0}
+2025-01-30 21:22:22.600 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:22.599623', 'temperature': 82.4}
+2025-01-30 21:22:23.604 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:23.603593', 'temperature': 82.8}
+2025-01-30 21:22:24.610 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:24.609408', 'temperature': 83.2}
+2025-01-30 21:22:25.617 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:25.616531', 'temperature': 83.6}
+2025-01-30 21:22:26.623 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:26.622764', 'temperature': 84.0}
+2025-01-30 21:22:26.916 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-30 21:22:26.917 | INFO     | __main__:main:105 - START consumer.
+2025-01-30 21:22:26.917 | INFO     | __main__:get_kafka_topic:39 - Kafka topic: unknown_topic
+2025-01-30 21:22:26.918 | INFO     | __main__:get_kafka_consumer_group_id:45 - Kafka consumer group ID: default_group
+2025-01-30 21:22:26.918 | INFO     | __main__:get_rolling_window_size:51 - Rolling window size: 5
+2025-01-30 21:22:26.918 | INFO     | __main__:main:111 - Consumer: Topic 'unknown_topic' and group 'default_group'...
+2025-01-30 21:22:26.918 | INFO     | __main__:main:112 - Rolling window size: 5
+2025-01-30 21:22:26.918 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-30 21:22:26.918 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='unknown_topic' and group ID='default_group'.
+2025-01-30 21:22:27.031 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-01-30 21:22:27.031 | INFO     | __main__:main:120 - Polling messages from topic 'unknown_topic'...
+2025-01-30 21:22:27.336 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:52.381516', 'temperature': 70.4}
+2025-01-30 21:22:27.337 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:53.445725', 'temperature': 70.8}
+2025-01-30 21:22:27.337 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:54.452723', 'temperature': 71.2}
+2025-01-30 21:22:27.337 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:55.454437', 'temperature': 71.6}
+2025-01-30 21:22:27.338 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:56.460111', 'temperature': 72.0}
+2025-01-30 21:22:27.338 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:57.467027', 'temperature': 72.4}
+2025-01-30 21:22:27.338 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:58.472097', 'temperature': 72.8}
+2025-01-30 21:22:27.338 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:21:59.475566', 'temperature': 73.2}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:00.482582', 'temperature': 73.6}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:01.487103', 'temperature': 74.0}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:02.490955', 'temperature': 74.4}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:03.496069', 'temperature': 74.8}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:04.503330', 'temperature': 75.2}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:05.510513', 'temperature': 75.6}
+2025-01-30 21:22:27.339 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:06.516230', 'temperature': 76.0}
+2025-01-30 21:22:27.340 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:07.521185', 'temperature': 76.4}
+2025-01-30 21:22:27.340 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:08.523778', 'temperature': 76.8}
+2025-01-30 21:22:27.340 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:09.528888', 'temperature': 77.2}
+2025-01-30 21:22:27.340 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:10.535017', 'temperature': 77.6}
+2025-01-30 21:22:27.340 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:11.541052', 'temperature': 78.0}
+2025-01-30 21:22:27.340 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:12.548501', 'temperature': 78.4}
+2025-01-30 21:22:27.341 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:13.551126', 'temperature': 78.8}
+2025-01-30 21:22:27.341 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:14.556728', 'temperature': 79.2}
+2025-01-30 21:22:27.341 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:15.562500', 'temperature': 79.6}
+2025-01-30 21:22:27.341 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:16.568066', 'temperature': 80.0}
+2025-01-30 21:22:27.342 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:17.572958', 'temperature': 80.4}
+2025-01-30 21:22:27.343 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:18.575681', 'temperature': 80.8}
+2025-01-30 21:22:27.343 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:19.579495', 'temperature': 81.2}
+2025-01-30 21:22:27.343 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:20.584650', 'temperature': 81.6}
+2025-01-30 21:22:27.344 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:21.592003', 'temperature': 82.0}
+2025-01-30 21:22:27.344 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:22.599623', 'temperature': 82.4}
+2025-01-30 21:22:27.344 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:23.603593', 'temperature': 82.8}
+2025-01-30 21:22:27.344 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:24.609408', 'temperature': 83.2}
+2025-01-30 21:22:27.344 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:25.616531', 'temperature': 83.6}
+2025-01-30 21:22:27.344 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:26.622764', 'temperature': 84.0}
+2025-01-30 21:22:27.629 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:27.628706', 'temperature': 84.4}
+2025-01-30 21:22:27.637 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:27.628706', 'temperature': 84.4}
+2025-01-30 21:22:28.635 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:28.634583', 'temperature': 84.8}
+2025-01-30 21:22:28.644 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:28.634583', 'temperature': 84.8}
+2025-01-30 21:22:29.641 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:29.641549', 'temperature': 85.2}
+2025-01-30 21:22:29.648 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:29.641549', 'temperature': 85.2}
+2025-01-30 21:22:30.648 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:30.647854', 'temperature': 85.6}
+2025-01-30 21:22:30.655 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:30.647854', 'temperature': 85.6}
+2025-01-30 21:22:31.652 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:31.651852', 'temperature': 86.0}
+2025-01-30 21:22:31.658 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:31.651852', 'temperature': 86.0}
+2025-01-30 21:22:32.656 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:32.656575', 'temperature': 86.4}
+2025-01-30 21:22:32.660 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:32.656575', 'temperature': 86.4}
+2025-01-30 21:22:33.662 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:33.662243', 'temperature': 86.8}
+2025-01-30 21:22:33.671 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:33.662243', 'temperature': 86.8}
+2025-01-30 21:22:34.669 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:34.668474', 'temperature': 87.2}
+2025-01-30 21:22:34.677 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:34.668474', 'temperature': 87.2}
+2025-01-30 21:22:35.677 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:35.676030', 'temperature': 87.6}
+2025-01-30 21:22:35.684 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:35.676030', 'temperature': 87.6}
+2025-01-30 21:22:36.684 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:36.683332', 'temperature': 88.0}
+2025-01-30 21:22:36.692 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:36.683332', 'temperature': 88.0}
+2025-01-30 21:22:37.688 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:37.687750', 'temperature': 88.4}
+2025-01-30 21:22:37.695 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:37.687750', 'temperature': 88.4}
+2025-01-30 21:22:38.694 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:38.693453', 'temperature': 88.8}
+2025-01-30 21:22:38.706 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:38.693453', 'temperature': 88.8}
+2025-01-30 21:22:39.699 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:39.698123', 'temperature': 89.2}
+2025-01-30 21:22:39.708 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:39.698123', 'temperature': 89.2}
+2025-01-30 21:22:40.705 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:40.704461', 'temperature': 89.6}
+2025-01-30 21:22:40.714 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:40.704461', 'temperature': 89.6}
+2025-01-30 21:22:41.712 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:41.711915', 'temperature': 90.0}
+2025-01-30 21:22:41.722 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:41.711915', 'temperature': 90.0}
+2025-01-30 21:22:42.719 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:42.718957', 'temperature': 90.4}
+2025-01-30 21:22:42.727 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:42.718957', 'temperature': 90.4}
+2025-01-30 21:22:43.723 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:43.722587', 'temperature': 90.8}
+2025-01-30 21:22:43.730 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:43.722587', 'temperature': 90.8}
+2025-01-30 21:22:44.729 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:44.729318', 'temperature': 91.2}
+2025-01-30 21:22:44.734 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:44.729318', 'temperature': 91.2}
+2025-01-30 21:22:45.735 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:45.735395', 'temperature': 91.6}
+2025-01-30 21:22:45.740 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:45.735395', 'temperature': 91.6}
+2025-01-30 21:22:46.742 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:46.741401', 'temperature': 92.0}
+2025-01-30 21:22:46.749 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:46.741401', 'temperature': 92.0}
+2025-01-30 21:22:47.745 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:47.745721', 'temperature': 92.4}
+2025-01-30 21:22:47.748 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:47.745721', 'temperature': 92.4}
+2025-01-30 21:22:48.751 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:48.751263', 'temperature': 92.8}
+2025-01-30 21:22:48.756 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:48.751263', 'temperature': 92.8}
+2025-01-30 21:22:49.753 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:49.752785', 'temperature': 93.2}
+2025-01-30 21:22:49.760 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:49.752785', 'temperature': 93.2}
+2025-01-30 21:22:50.759 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:50.758669', 'temperature': 93.6}
+2025-01-30 21:22:50.766 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:50.758669', 'temperature': 93.6}
+2025-01-30 21:22:51.766 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:51.765766', 'temperature': 94.0}
+2025-01-30 21:22:51.773 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:51.765766', 'temperature': 94.0}
+2025-01-30 21:22:52.772 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:52.771780', 'temperature': 94.4}
+2025-01-30 21:22:52.780 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:52.771780', 'temperature': 94.4}
+2025-01-30 21:22:53.776 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:53.775014', 'temperature': 94.8}
+2025-01-30 21:22:53.786 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:53.775014', 'temperature': 94.8}
+2025-01-30 21:22:54.780 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:54.780653', 'temperature': 95.2}
+2025-01-30 21:22:54.787 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:54.780653', 'temperature': 95.2}
+2025-01-30 21:22:54.787 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:22:54.780653: Temperature is 95.2°F! 🔥
+2025-01-30 21:22:55.786 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:55.786113', 'temperature': 95.6}
+2025-01-30 21:22:55.791 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:55.786113', 'temperature': 95.6}
+2025-01-30 21:22:55.791 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:22:55.786113: Temperature is 95.6°F! 🔥
+2025-01-30 21:22:56.793 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:56.792220', 'temperature': 96.0}
+2025-01-30 21:22:56.800 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:56.792220', 'temperature': 96.0}
+2025-01-30 21:22:56.800 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:22:56.792220: Temperature is 96.0°F! 🔥
+2025-01-30 21:22:57.797 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:57.797554', 'temperature': 96.4}
+2025-01-30 21:22:57.805 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:57.797554', 'temperature': 96.4}
+2025-01-30 21:22:57.805 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:22:57.797554: Temperature is 96.4°F! 🔥
+2025-01-30 21:22:58.803 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:58.802966', 'temperature': 96.8}
+2025-01-30 21:22:58.810 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:58.802966', 'temperature': 96.8}
+2025-01-30 21:22:58.810 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:22:58.802966: Temperature is 96.8°F! 🔥
+2025-01-30 21:22:59.804 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:22:59.804159', 'temperature': 97.2}
+2025-01-30 21:22:59.807 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:22:59.804159', 'temperature': 97.2}
+2025-01-30 21:22:59.807 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:22:59.804159: Temperature is 97.2°F! 🔥
+2025-01-30 21:23:00.805 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:00.804878', 'temperature': 97.6}
+2025-01-30 21:23:00.810 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:00.804878', 'temperature': 97.6}
+2025-01-30 21:23:00.810 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:00.804878: Temperature is 97.6°F! 🔥
+2025-01-30 21:23:01.811 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:01.810757', 'temperature': 98.0}
+2025-01-30 21:23:01.817 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:01.810757', 'temperature': 98.0}
+2025-01-30 21:23:01.817 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:01.810757: Temperature is 98.0°F! 🔥
+2025-01-30 21:23:02.817 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:02.817080', 'temperature': 98.4}
+2025-01-30 21:23:02.825 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:02.817080', 'temperature': 98.4}
+2025-01-30 21:23:02.825 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:02.817080: Temperature is 98.4°F! 🔥
+2025-01-30 21:23:03.823 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:03.822915', 'temperature': 98.8}
+2025-01-30 21:23:03.830 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:03.822915', 'temperature': 98.8}
+2025-01-30 21:23:03.830 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:03.822915: Temperature is 98.8°F! 🔥
+2025-01-30 21:23:04.827 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:04.827546', 'temperature': 99.2}
+2025-01-30 21:23:04.831 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:04.827546', 'temperature': 99.2}
+2025-01-30 21:23:04.831 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:04.827546: Temperature is 99.2°F! 🔥
+2025-01-30 21:23:05.834 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:05.833232', 'temperature': 99.6}
+2025-01-30 21:23:05.841 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:05.833232', 'temperature': 99.6}
+2025-01-30 21:23:05.841 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:05.833232: Temperature is 99.6°F! 🔥
+2025-01-30 21:23:06.839 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:06.838386', 'temperature': 100.0}
+2025-01-30 21:23:06.845 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:06.838386', 'temperature': 100.0}
+2025-01-30 21:23:06.846 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:06.838386: Temperature is 100.0°F! 🔥
+2025-01-30 21:23:07.841 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:07.840965', 'temperature': 100.4}
+2025-01-30 21:23:07.849 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:07.840965', 'temperature': 100.4}
+2025-01-30 21:23:07.849 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:07.840965: Temperature is 100.4°F! 🔥
+2025-01-30 21:23:08.845 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:08.844640', 'temperature': 100.8}
+2025-01-30 21:23:08.854 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:08.844640', 'temperature': 100.8}
+2025-01-30 21:23:08.854 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:08.844640: Temperature is 100.8°F! 🔥
+2025-01-30 21:23:09.852 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:09.852527', 'temperature': 101.2}
+2025-01-30 21:23:09.857 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:09.852527', 'temperature': 101.2}
+2025-01-30 21:23:09.857 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:09.852527: Temperature is 101.2°F! 🔥
+2025-01-30 21:23:10.858 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:10.858116', 'temperature': 101.6}
+2025-01-30 21:23:10.865 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:10.858116', 'temperature': 101.6}
+2025-01-30 21:23:10.865 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:10.858116: Temperature is 101.6°F! 🔥
+2025-01-30 21:23:11.863 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:11.862939', 'temperature': 102.0}
+2025-01-30 21:23:11.869 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:11.862939', 'temperature': 102.0}
+2025-01-30 21:23:11.869 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:11.862939: Temperature is 102.0°F! 🔥
+2025-01-30 21:23:12.864 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:12.864396', 'temperature': 102.4}
+2025-01-30 21:23:12.867 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:12.864396', 'temperature': 102.4}
+2025-01-30 21:23:12.867 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:12.864396: Temperature is 102.4°F! 🔥
+2025-01-30 21:23:13.870 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:13.869997', 'temperature': 102.8}
+2025-01-30 21:23:13.876 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:13.869997', 'temperature': 102.8}
+2025-01-30 21:23:13.876 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:13.869997: Temperature is 102.8°F! 🔥
+2025-01-30 21:23:14.876 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:14.876025', 'temperature': 103.2}
+2025-01-30 21:23:14.881 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:14.876025', 'temperature': 103.2}
+2025-01-30 21:23:14.881 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:14.876025: Temperature is 103.2°F! 🔥
+2025-01-30 21:23:15.881 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:15.881541', 'temperature': 103.6}
+2025-01-30 21:23:15.888 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:15.881541', 'temperature': 103.6}
+2025-01-30 21:23:15.888 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:15.881541: Temperature is 103.6°F! 🔥
+2025-01-30 21:23:16.887 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:16.887380', 'temperature': 104.0}
+2025-01-30 21:23:16.891 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:16.887380', 'temperature': 104.0}
+2025-01-30 21:23:16.891 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:16.887380: Temperature is 104.0°F! 🔥
+2025-01-30 21:23:17.893 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:17.892973', 'temperature': 103.2}
+2025-01-30 21:23:17.898 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:17.892973', 'temperature': 103.2}
+2025-01-30 21:23:17.898 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:17.892973: Temperature is 103.2°F! 🔥
+2025-01-30 21:23:18.898 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:18.898502', 'temperature': 103.1}
+2025-01-30 21:23:18.905 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:18.898502', 'temperature': 103.1}
+2025-01-30 21:23:18.905 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:18.898502: Temperature is 103.1°F! 🔥
+2025-01-30 21:23:19.904 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:19.904510', 'temperature': 102.0}
+2025-01-30 21:23:19.911 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:19.904510', 'temperature': 102.0}
+2025-01-30 21:23:19.911 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:19.904510: Temperature is 102.0°F! 🔥
+2025-01-30 21:23:20.910 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:20.910134', 'temperature': 101.5}
+2025-01-30 21:23:20.918 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:20.910134', 'temperature': 101.5}
+2025-01-30 21:23:20.919 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:20.910134: Temperature is 101.5°F! 🔥
+2025-01-30 21:23:21.916 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:21.916226', 'temperature': 100.2}
+2025-01-30 21:23:21.923 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:21.916226', 'temperature': 100.2}
+2025-01-30 21:23:21.923 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:21.916226: Temperature is 100.2°F! 🔥
+2025-01-30 21:23:22.921 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:22.921047', 'temperature': 100.1}
+2025-01-30 21:23:22.924 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:22.921047', 'temperature': 100.1}
+2025-01-30 21:23:22.924 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:22.921047: Temperature is 100.1°F! 🔥
+2025-01-30 21:23:23.922 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:23.922289', 'temperature': 99.2}
+2025-01-30 21:23:23.928 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:23.922289', 'temperature': 99.2}
+2025-01-30 21:23:23.928 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:23.922289: Temperature is 99.2°F! 🔥
+2025-01-30 21:23:24.928 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:24.928499', 'temperature': 98.3}
+2025-01-30 21:23:24.933 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:24.928499', 'temperature': 98.3}
+2025-01-30 21:23:24.933 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:24.928499: Temperature is 98.3°F! 🔥
+2025-01-30 21:23:25.934 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:25.934070', 'temperature': 98.1}
+2025-01-30 21:23:25.941 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:25.934070', 'temperature': 98.1}
+2025-01-30 21:23:25.941 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:25.934070: Temperature is 98.1°F! 🔥
+2025-01-30 21:23:26.941 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:26.940714', 'temperature': 97.5}
+2025-01-30 21:23:26.947 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:26.940714', 'temperature': 97.5}
+2025-01-30 21:23:26.947 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:26.940714: Temperature is 97.5°F! 🔥
+2025-01-30 21:23:27.943 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:27.942851', 'temperature': 97.0}
+2025-01-30 21:23:27.950 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:27.942851', 'temperature': 97.0}
+2025-01-30 21:23:27.950 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:27.942851: Temperature is 97.0°F! 🔥
+2025-01-30 21:23:28.949 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:28.948880', 'temperature': 97.0}
+2025-01-30 21:23:28.957 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:28.948880', 'temperature': 97.0}
+2025-01-30 21:23:28.957 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:28.948880: Temperature is 97.0°F! 🔥
+2025-01-30 21:23:29.951 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:29.951366', 'temperature': 96.8}
+2025-01-30 21:23:29.956 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:29.951366', 'temperature': 96.8}
+2025-01-30 21:23:29.956 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:29.951366: Temperature is 96.8°F! 🔥
+2025-01-30 21:23:30.955 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:30.954807', 'temperature': 96.5}
+2025-01-30 21:23:30.961 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:30.954807', 'temperature': 96.5}
+2025-01-30 21:23:30.961 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:30.954807: Temperature is 96.5°F! 🔥
+2025-01-30 21:23:31.958 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:31.957508', 'temperature': 96.3}
+2025-01-30 21:23:31.966 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:31.957508', 'temperature': 96.3}
+2025-01-30 21:23:31.966 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:31.957508: Temperature is 96.3°F! 🔥
+2025-01-30 21:23:32.964 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:32.963810', 'temperature': 96.1}
+2025-01-30 21:23:32.972 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:32.963810', 'temperature': 96.1}
+2025-01-30 21:23:32.972 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:32.963810: Temperature is 96.1°F! 🔥
+2025-01-30 21:23:33.971 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:33.970628', 'temperature': 95.8}
+2025-01-30 21:23:33.978 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:33.970628', 'temperature': 95.8}
+2025-01-30 21:23:33.978 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:33.970628: Temperature is 95.8°F! 🔥
+2025-01-30 21:23:34.978 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:34.978190', 'temperature': 95.7}
+2025-01-30 21:23:34.983 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:34.978190', 'temperature': 95.7}
+2025-01-30 21:23:34.983 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:34.978190: Temperature is 95.7°F! 🔥
+2025-01-30 21:23:35.985 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:35.984151', 'temperature': 95.6}
+2025-01-30 21:23:35.992 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:35.984151', 'temperature': 95.6}
+2025-01-30 21:23:35.992 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:35.984151: Temperature is 95.6°F! 🔥
+2025-01-30 21:23:36.991 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:36.990586', 'temperature': 95.5}
+2025-01-30 21:23:36.999 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:36.990586', 'temperature': 95.5}
+2025-01-30 21:23:37.000 | WARNING  | __main__:process_message:86 - 🔥 TOO HOT ALERT at 2025-01-31T03:23:36.990586: Temperature is 95.5°F! 🔥
+2025-01-30 21:23:37.998 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:37.997752', 'temperature': 93.2}
+2025-01-30 21:23:38.006 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:37.997752', 'temperature': 93.2}
+2025-01-30 21:23:39.005 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:39.004212', 'temperature': 92.5}
+2025-01-30 21:23:39.012 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:39.004212', 'temperature': 92.5}
+2025-01-30 21:23:40.012 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:40.011802', 'temperature': 92.1}
+2025-01-30 21:23:40.016 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:40.011802', 'temperature': 92.1}
+2025-01-30 21:23:41.018 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:41.017836', 'temperature': 92.0}
+2025-01-30 21:23:41.026 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:41.017836', 'temperature': 92.0}
+2025-01-30 21:23:42.025 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:42.025069', 'temperature': 91.8}
+2025-01-30 21:23:42.034 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:42.025069', 'temperature': 91.8}
+2025-01-30 21:23:43.030 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:43.029146', 'temperature': 91.7}
+2025-01-30 21:23:43.037 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:43.029146', 'temperature': 91.7}
+2025-01-30 21:23:44.037 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:44.036693', 'temperature': 91.5}
+2025-01-30 21:23:44.044 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:44.036693', 'temperature': 91.5}
+2025-01-30 21:23:45.044 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:45.043805', 'temperature': 91.4}
+2025-01-30 21:23:45.050 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:45.043805', 'temperature': 91.4}
+2025-01-30 21:23:46.050 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:46.049935', 'temperature': 91.3}
+2025-01-30 21:23:46.058 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:46.049935', 'temperature': 91.3}
+2025-01-30 21:23:47.054 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:47.053183', 'temperature': 91.2}
+2025-01-30 21:23:47.060 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:47.053183', 'temperature': 91.2}
+2025-01-30 21:23:48.057 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:48.056091', 'temperature': 91.1}
+2025-01-30 21:23:48.063 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:48.056091', 'temperature': 91.1}
+2025-01-30 21:23:49.060 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:49.059243', 'temperature': 91.0}
+2025-01-30 21:23:49.069 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:49.059243', 'temperature': 91.0}
+2025-01-30 21:23:50.068 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:50.068374', 'temperature': 91.0}
+2025-01-30 21:23:50.075 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:50.068374', 'temperature': 91.0}
+2025-01-30 21:23:51.074 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:51.074526', 'temperature': 90.5}
+2025-01-30 21:23:51.080 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:51.074526', 'temperature': 90.5}
+2025-01-30 21:23:52.077 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:52.077543', 'temperature': 90.2}
+2025-01-30 21:23:52.081 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:52.077543', 'temperature': 90.2}
+2025-01-30 21:23:53.084 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:53.083477', 'temperature': 89.8}
+2025-01-30 21:23:53.094 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:53.083477', 'temperature': 89.8}
+2025-01-30 21:23:54.090 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:54.089894', 'temperature': 89.6}
+2025-01-30 21:23:54.096 | INFO     | __main__:process_message:75 - Processed JSON message: {'timestamp': '2025-01-31T03:23:54.089894', 'temperature': 89.6}
+2025-01-30 21:23:55.097 | INFO     | __main__:main:139 - Sent message to topic 'unknown_topic': {'timestamp': '2025-01-31T03:23:55.096134', 'temperature': 88.9}
