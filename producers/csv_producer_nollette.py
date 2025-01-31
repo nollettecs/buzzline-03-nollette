@@ -1,12 +1,3 @@
-"""
-csv_producer_case.py
-
-Stream numeric data to a Kafka topic.
-
-It is common to transfer csv data as JSON so 
-each field is clearly labeled. 
-"""
-
 #####################################
 # Import Modules
 #####################################
@@ -41,67 +32,56 @@ load_dotenv()
 # Getter Functions for .env Variables
 #####################################
 
-
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("SMOKER_TOPIC", "unknown_topic")
+    topic = os.getenv("OUTSIDE_TOPIC", "unknown_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
-
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
-    interval = int(os.getenv("SMOKER_INTERVAL_SECONDS", 1))
+    interval = int(os.getenv("TEMPERATURE_INTERVAL_SECONDS", 1))
     logger.info(f"Message interval: {interval} seconds")
     return interval
-
 
 #####################################
 # Set up Paths
 #####################################
 
-# The parent directory of this file is its folder.
-# Go up one more parent level to get the project root.
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 logger.info(f"Project root: {PROJECT_ROOT}")
 
-# Set directory where data is stored
 DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
-# Set the name of the data file
-DATA_FILE = DATA_FOLDER.joinpath("smoker_temps.csv")
+DATA_FILE = DATA_FOLDER.joinpath("outside_temps.csv")
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
 # Message Generator
 #####################################
 
-
 def generate_messages(file_path: pathlib.Path):
     """
-    Read from a csv file and yield records one by one, continuously.
+    Read from a CSV file and yield records one by one, continuously.
 
     Args:
         file_path (pathlib.Path): Path to the CSV file.
 
     Yields:
-        str: CSV row formatted as a string.
+        dict: A dictionary containing temperature data.
     """
     while True:
         try:
             logger.info(f"Opening data file in read mode: {DATA_FILE}")
             with open(DATA_FILE, "r") as csv_file:
                 logger.info(f"Reading data from file: {DATA_FILE}")
-
                 csv_reader = csv.DictReader(csv_file)
                 for row in csv_reader:
-                    # Ensure required fields are present
                     if "temperature" not in row:
                         logger.error(f"Missing 'temperature' column in row: {row}")
                         continue
 
-                    # Generate a timestamp and prepare the message
                     current_timestamp = datetime.utcnow().isoformat()
                     message = {
                         "timestamp": current_timestamp,
@@ -116,11 +96,9 @@ def generate_messages(file_path: pathlib.Path):
             logger.error(f"Unexpected error in message generation: {e}")
             sys.exit(3)
 
-
 #####################################
 # Define main function for this module.
 #####################################
-
 
 def main():
     """
@@ -130,20 +108,16 @@ def main():
     - Creates a Kafka producer using the `create_kafka_producer` utility.
     - Streams messages to the Kafka topic.
     """
-
     logger.info("START producer.")
     verify_services()
 
-    # fetch .env content
     topic = get_kafka_topic()
     interval_secs = get_message_interval()
 
-    # Verify the data file exists
     if not DATA_FILE.exists():
         logger.error(f"Data file not found: {DATA_FILE}. Exiting.")
         sys.exit(1)
 
-    # Create the Kafka producer
     producer = create_kafka_producer(
         value_serializer=lambda x: json.dumps(x).encode("utf-8")
     )
@@ -151,7 +125,6 @@ def main():
         logger.error("Failed to create Kafka producer. Exiting...")
         sys.exit(3)
 
-    # Create topic if it doesn't exist
     try:
         create_kafka_topic(topic)
         logger.info(f"Kafka topic '{topic}' is ready.")
@@ -159,7 +132,6 @@ def main():
         logger.error(f"Failed to create or verify topic '{topic}': {e}")
         sys.exit(1)
 
-    # Generate and send messages
     logger.info(f"Starting message production to topic '{topic}'...")
     try:
         for csv_message in generate_messages(DATA_FILE):
@@ -175,7 +147,6 @@ def main():
         logger.info("Kafka producer closed.")
 
     logger.info("END producer.")
-
 
 #####################################
 # Conditional Execution
