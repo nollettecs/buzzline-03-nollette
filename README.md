@@ -1,4 +1,8 @@
-# buzzline-03-case
+# Cole Nollette
+# 44671 Module 3
+# 1/30/25
+# buzzline-03-nollette
+
 
 Streaming data does not have to be simple text.
 Many of us are familiar with streaming video content and audio (e.g. music) files. 
@@ -43,17 +47,11 @@ See instructions at [SETUP-KAFKA.md] to:
 In VS Code, open a terminal.
 Use the commands below to activate .venv, and start the producer. 
 
-Windows:
-
-```shell
-.venv\Scripts\activate
-py -m producers.json_producer_case
-```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.json_producer_case
+python3 -m producers.json_producer_nollette
 ```
 
 What did we name the topic used with JSON data? 
@@ -66,16 +64,11 @@ Consumers process streaming data in real time.
 In VS Code, open a NEW terminal in your root project folder. 
 Use the commands below to activate .venv, and start the consumer. 
 
-Windows:
-```shell
-.venv\Scripts\activate
-py -m consumers.json_consumer_case
-```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.json_consumer_case
+python3 -m consumers.json_consumer_nollette
 ```
 
 What did we name the topic used with JSON data? 
